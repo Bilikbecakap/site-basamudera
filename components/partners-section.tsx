@@ -5,11 +5,11 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const partners = [
-  { name: "Dana Indonesiana", image: "/images/mitra/danaindonesiana.png" },
-  { name: "Kementerian Kebudayaan Republik Indonesia", image: "/images/mitra/kemenbud.png" },
-  { name: "Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi", image: "/images/mitra/kemenristek.png" },
-  { name: "Kemah Budaya Kaum Muda", image: "/images/mitra/kemahbudaya.png" },
-  { name: "Pemerintah Kabupaten Belitung Timur", image: "/images/mitra/belitungtimur.png" },
+  { name: "Dana Indonesiana", image: "/images/mitra/danaindonesiana.webp" },
+  { name: "Kementerian Kebudayaan Republik Indonesia", image: "/images/mitra/kemenbud.webp" },
+  { name: "Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi", image: "/images/mitra/kemenristek.webp" },
+  { name: "Kemah Budaya Kaum Muda", image: "/images/mitra/kemahbudaya.webp" },
+  { name: "Pemerintah Kabupaten Belitung Timur", image: "/images/mitra/belitungtimur.webp" },
 ]
 
 export function PartnersSection() {
@@ -52,6 +52,7 @@ export function PartnersSection() {
                 alt={partner.name}
                 fill
                 className="object-contain"
+                sizes="176px"
               />
             </motion.div>
           ))}

@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const heroImages = [
-  "/images/hero-1.png",
-  "/images/hero-2.png",
-  "/images/hero-3.png",
-  "/images/hero-4.png",
+  "/images/hero-1.webp",
+  "/images/hero-2.webp",
+  "/images/hero-3.webp",
+  "/images/hero-4.webp",
 ]
 
 export function HeroSection() {
@@ -38,6 +38,8 @@ export function HeroSection() {
             fill
             className="object-cover object-center"
             priority={i === 0}
+            loading={i === 0 ? "eager" : "lazy"}
+            sizes="100vw"
           />
         </div>
       ))}

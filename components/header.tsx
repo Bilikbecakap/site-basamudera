@@ -38,7 +38,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src="/logo/logo-basamudera.png"
+              src="/logo/logo-basamudera.webp"
               alt="Basamudera"
               width={200}
               height={100}

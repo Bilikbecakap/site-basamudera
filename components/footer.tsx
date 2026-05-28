@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Send, Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Mail, MapPin, Send, Facebook, Instagram, Twitter, Youtube } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -91,13 +91,9 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <span className="text-paper/55 text-sm">
-                  Jl. Kebudayaan No. 123<br />
-                  Jakarta Selatan, 12345
+                  Kabupaten Bekasi,<br />
+                  Jawa Barat
                 </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-gold shrink-0" />
-                <span className="text-paper/55 text-sm">+62 21 1234 5678</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold shrink-0" />
@@ -108,14 +104,16 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex gap-3 mt-6">
               {[
-                { icon: Facebook, label: "Facebook" },
-                { icon: Instagram, label: "Instagram" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Youtube, label: "Youtube" },
-              ].map(({ icon: Icon, label }) => (
+                { icon: Facebook, label: "Facebook", href: "#" },
+                { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/basamudera.id/" },
+                { icon: Twitter, label: "Twitter", href: "#" },
+                { icon: Youtube, label: "Youtube", href: "#" },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-10 h-10 bg-paper/8 border border-paper/10 rounded-full flex items-center justify-center hover:bg-terracotta hover:border-terracotta transition-colors"
                   aria-label={label}
                 >

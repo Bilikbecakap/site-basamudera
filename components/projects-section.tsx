@@ -15,7 +15,7 @@ const projects = [
     year: "2023",
     contributors: "50+",
     tags: ["Tradisi Lisan", "Pembelajaran", "Budaya"],
-    image: "/images/bilikbecakap-proyek.png",
+    image: "/images/bilikbecakap-proyek.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     year: "2026",
     contributors: "-",
     tags: ["Arsip Digital", "Melayu Bangka"],
-    image: "/images/bilikmapur-proyek.png",
+    image: "/images/bilikmapur-proyek.webp",
   },
 ]
 
@@ -86,6 +86,7 @@ export function ProjectsSection() {
                       alt={project.name}
                       fill
                       className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     {/* Tags */}
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
