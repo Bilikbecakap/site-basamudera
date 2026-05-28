@@ -20,6 +20,7 @@ const targets = [
   { input: 'images/mitra/kemahbudaya.png',     output: 'images/mitra/kemahbudaya.webp',     width: 400,  quality: 85 },
   { input: 'images/mitra/belitungtimur.png',   output: 'images/mitra/belitungtimur.webp',   width: 400,  quality: 85 },
   { input: 'logo/logo-basamudera.png',         output: 'logo/logo-basamudera.webp',         width: 400,  quality: 90 },
+  { input: 'images/badan-hukum.png',           output: 'images/badan-hukum.webp',           width: 800,  quality: 85 },
 ]
 
 async function convert() {
