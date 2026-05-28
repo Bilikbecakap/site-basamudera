@@ -14,12 +14,38 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Yayasan Basamudera Budaya Teknologi Indonesia',
-  description: 'Melestarikan warisan budaya Indonesia melalui teknologi - Preserving Indonesian cultural heritage through technology',
-  generator: 'v0.app',
+  metadataBase: new URL('https://basamudera.or.id'),
+  title: {
+    default: 'Yayasan Basamudera Budaya Teknologi Indonesia',
+    template: '%s | Basamudera',
+  },
+  description: 'Yayasan Basamudera Budaya Teknologi Indonesia adalah yayasan yang berkomitmen melestarikan keberlanjutan bahasa dan budaya daerah melalui pemanfaatan teknologi digital.',
+  keywords: ['basamudera', 'yayasan', 'bahasa daerah', 'budaya', 'nusantara', 'teknologi', 'pelestarian bahasa', 'Indonesia'],
+  authors: [{ name: 'Yayasan Basamudera Budaya Teknologi Indonesia' }],
   icons: {
     icon: '/logo/ico-logo.png',
     apple: '/logo/ico-logo.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'id_ID',
+    siteName: 'Basamudera',
+    title: 'Yayasan Basamudera Budaya Teknologi Indonesia',
+    description: 'Yayasan yang berkomitmen melestarikan bahasa daerah Nusantara melalui teknologi digital, digerakkan oleh semangat kaum muda.',
+    images: [
+      {
+        url: '/logo/logo-basamudera.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Yayasan Basamudera Budaya Teknologi Indonesia',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Yayasan Basamudera Budaya Teknologi Indonesia',
+    description: 'Yayasan yang berkomitmen melestarikan budaya dan bahasa daerah Nusantara melalui teknologi digital.',
+    images: ['/logo/logo-basamudera.webp'],
   },
 }
 

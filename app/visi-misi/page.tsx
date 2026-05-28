@@ -53,7 +53,7 @@ const fungsi = [
   {
     label: "Sosial",
     points: [
-      "Mendorong kolaborasi antar sektoral di Kabupaten Belitung Timur dalam pemajuan kebudayaan melalui bahasa dengan pendekatan proyek bahasa dan budaya sebagai sarana pemersatu antar elemen masyarakat, pelaku kebudayaan, institusi pendidikan, dan OPD.",
+      "Mendorong kolaborasi antar sektoral dalam pemajuan kebudayaan melalui bahasa dengan pendekatan proyek bahasa dan budaya sebagai sarana pemersatu antar elemen masyarakat, pelaku kebudayaan, institusi pendidikan, dan OPD.",
       "Meningkatkan kebanggaan dan identitas budaya masyarakat lokal terhadap warisan bahasa daerah mereka.",
       "Memperkuat jaringan sosial antara generasi muda dan lansia dalam penggunaan bahasa daerah.",
       "Mendorong inklusi sosial dengan memberdayakan komunitas untuk memelihara dan mengembangkan budaya lokal yang berkelanjutan.",
@@ -65,7 +65,7 @@ const fungsi = [
     points: [
       "Meningkatkan partisipasi pelaku budaya untuk menyalurkan pengetahuannya dari satu generasi ke generasi berikutnya melalui platform bilikbecakap.",
       "Melestarikan dan mengembangkan penggunaan bahasa daerah sebagai sarana ekspresi seni dan budaya lokal seperti seni pertunjukan, musik tradisional, dan sastra.",
-      "Mendorong pemahaman dan apresiasi terhadap keberagaman budaya di Indonesia, khususnya di wilayah Belitung Timur.",
+      "Mendorong pemahaman dan apresiasi terhadap keberagaman budaya di Indonesia",
       "Menjadi landasan bagi generasi muda untuk memahami dan mempertahankan warisan budaya leluhur mereka.",
     ],
   },
@@ -73,7 +73,7 @@ const fungsi = [
     label: "Pendidikan",
     points: [
       "Meningkatkan literasi bahasa daerah di kalangan siswa dan mahasiswa melalui aplikasi bahasa dan budaya sebagai media pembelajaran yang interaktif.",
-      "Memperkaya kurikulum pendidikan lokal dengan pengetahuan tentang bahasa dan budaya Melayu Belitung yang bersumber dari praktisi lokal, tenaga pendidik, kelompok kerja guru, dan pelaku budaya.",
+      "Memperkaya kurikulum pendidikan lokal dengan pengetahuan tentang bahasa dan budaya yang bersumber dari praktisi lokal, tenaga pendidik, kelompok kerja guru, dan pelaku budaya.",
       "Meningkatkan partisipasi aktif dari kalangan tenaga pendidik dalam pembuatan materi pembelajaran berbasis digital untuk muatan lokal.",
       "Mendorong minat belajar siswa terhadap bahasa daerah dengan pembelajaran yang inovatif dan menyenangkan.",
     ],
@@ -81,7 +81,7 @@ const fungsi = [
   {
     label: "Pariwisata Daerah",
     points: [
-      "Menciptakan aplikasi bahasa dan budaya sebagai sarana informasi pariwisata dan kebudayaan di Belitung Timur bagi wisatawan maupun para peneliti.",
+      "Menciptakan aplikasi bahasa dan budaya sebagai sarana informasi pariwisata dan kebudayaan bagi wisatawan maupun para peneliti.",
       "Meningkatkan daya tarik pariwisata dengan menyediakan informasi yang lebih akurat dan mendalam tentang budaya dan sejarah lokal.",
       "Memfasilitasi interaksi langsung yang lebih mudah antara wisatawan serta peneliti lokal dan internasional dengan komunitas lokal melalui fitur pengenalan suara di translator.",
     ],

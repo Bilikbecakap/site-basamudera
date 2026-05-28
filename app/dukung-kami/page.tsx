@@ -56,7 +56,7 @@ export default function DukungKamiPage() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-paper/60 max-w-xl mx-auto leading-relaxed"
           >
-            Setiap dukungan Anda adalah nyala lentera bagi bahasa daerah yang hampir padam.
+            Setiap dukungan Anda adalah nyala lentera bagi budaya dan bahasa daerah yang hampir padam.
             Bersama, kita rawat warisan leluhur untuk generasi mendatang.
           </motion.p>
         </div>
@@ -94,7 +94,7 @@ export default function DukungKamiPage() {
                 produksi konten edukatif, dan kegiatan komunitas Basamudera di seluruh Indonesia.
               </p>
               <p className="text-ink-4 leading-relaxed mb-8">
-                Setiap rupiah yang Anda berikan berkontribusi langsung pada upaya mendokumentasikan
+                Setiap rupiah yang Anda berikan berkontribusi langsung pada upaya mendokumentasikan budaya
                 bahasa-bahasa daerah sebelum hilang ditelan zaman.
               </p>
 

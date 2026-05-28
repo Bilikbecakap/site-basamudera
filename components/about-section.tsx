@@ -58,7 +58,7 @@ export function AboutSection() {
               Menjembatani <span className="text-terracotta">Tradisi</span> dan <span className="text-ocean">Inovasi</span>
             </h2>
             <p className="text-base sm:text-lg text-ink-3 leading-relaxed mb-6">
-              <b>Yayasan Basamudera Budaya Teknologi Indonesia</b>Yayasan Basamudera Budaya Teknologi Indonesia didirikan dengan visi melestarikan kekayaan budaya Nusantara melalui pendekatan teknologi modern. Kami percaya bahwa warisan budaya adalah aset berharga yang harus dijaga untuk generasi mendatang.
+              <b>Yayasan Basamudera Budaya Teknologi Indonesia</b>Yayasan Basamudera Budaya Teknologi Indonesia didirikan dengan visi melestarikan kekayaan budaya dan bahasa Nusantara melalui pendekatan teknologi modern. Kami percaya bahwa warisan budaya dan bahasa adalah aset berharga yang harus dijaga untuk generasi mendatang.
             </p>
             <p className="text-base sm:text-lg text-ink-3 leading-relaxed mb-6">
               Dengan menggabungkan kearifan lokal dan teknologi digital, kami menciptakan platform dan program yang memungkinkan masyarakat untuk belajar, berbagi, dan melestarikan bahasa, seni, dan tradisi mereka.

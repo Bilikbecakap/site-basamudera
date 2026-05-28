@@ -65,7 +65,7 @@ export default function TentangPage() {
               </h2>
               <p className="text-ink-4 leading-relaxed mb-5">
                 Basamudera adalah sebuah yayasan yang berkomitmen untuk mempertahankan keberlanjutan
-                bahasa daerah melalui pemanfaatan teknologi digital.
+                budaya dan bahasa daerah melalui pemanfaatan teknologi digital.
                 Basamudera digerakan oleh kaum muda yang berasal dari berbagai latar belakang asal daerah,
                 keilmuan dan bidang keahlian yang berbeda-beda — mulai dari bahasa, teknologi, pendidikan,
                 hukum hingga keuangan. Basamudera hadir dari program Kemah Budaya Kaum Muda (KBKM) 2023
