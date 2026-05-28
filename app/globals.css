@@ -1,0 +1,180 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ── core palette ── */
+  --ink:   #161310;
+  --ink-2: #2a241d;
+  --ink-3: #57493a;
+  --ink-4: #8a7964;
+
+  --paper:   #f4ecdc;
+  --paper-2: #ece1c9;
+  --paper-3: #e0d2b4;
+  --cream:   #faf4e5;
+
+  --ocean:   #0c2a3c;
+  --ocean-2: #0f3a52;
+  --navy:    #1a4361;
+  --teal:    #2f6478;
+  --forest:  #2b463a;
+  --indigo:  #1d2e4d;
+
+  --terracotta:   #b35a3a;
+  --terracotta-2: #8c4429;
+  --gold:   #b48a4c;
+  --gold-2: #8b6a36;
+
+  /* ── semantic ── */
+  --bg:        var(--paper);
+  --bg-deep:   var(--cream);
+  --fg:        var(--ink);
+  --fg-soft:   var(--ink-3);
+  --fg-faint:  var(--ink-4);
+  --rule:      rgba(22, 19, 16, 0.14);
+  --rule-soft: rgba(22, 19, 16, 0.07);
+  --deep:      var(--ocean);
+
+  /* ── Tailwind / shadcn tokens ── */
+  --background:           var(--paper);
+  --foreground:           var(--ink);
+  --card:                 var(--cream);
+  --card-foreground:      var(--ink);
+  --popover:              var(--cream);
+  --popover-foreground:   var(--ink);
+  --primary:              var(--ocean);
+  --primary-foreground:   var(--paper);
+  --secondary:            var(--paper-2);
+  --secondary-foreground: var(--ink-2);
+  --muted:                var(--paper-3);
+  --muted-foreground:     var(--ink-3);
+  --accent:               var(--terracotta);
+  --accent-foreground:    var(--cream);
+  --destructive:          var(--terracotta-2);
+  --destructive-foreground: var(--cream);
+  --border:               var(--rule);
+  --input:                var(--paper-2);
+  --ring:                 var(--navy);
+  --chart-1: var(--ocean);
+  --chart-2: var(--terracotta);
+  --chart-3: var(--gold);
+  --chart-4: var(--teal);
+  --chart-5: var(--forest);
+  --radius: 0.75rem;
+
+  /* lontar card surface */
+  --lontar-beige: var(--cream);
+}
+
+.dark {
+  --background:           var(--ink);
+  --foreground:           var(--paper);
+  --card:                 var(--ink-2);
+  --card-foreground:      var(--paper);
+  --popover:              var(--ink-2);
+  --popover-foreground:   var(--paper);
+  --primary:              var(--teal);
+  --primary-foreground:   var(--cream);
+  --secondary:            var(--ink-2);
+  --secondary-foreground: var(--paper-2);
+  --muted:                var(--ink-2);
+  --muted-foreground:     var(--ink-4);
+  --accent:               var(--terracotta);
+  --accent-foreground:    var(--cream);
+  --destructive:          var(--terracotta);
+  --destructive-foreground: var(--cream);
+  --border:               rgba(244, 236, 220, 0.10);
+  --input:                var(--ink-2);
+  --ring:                 var(--teal);
+}
+
+@theme inline {
+  --font-sans:  'Plus Jakarta Sans', 'Geist', 'Geist Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono:  'Geist Mono', 'Geist Mono Fallback', monospace;
+
+  /* shadcn semantic tokens */
+  --color-background:          var(--background);
+  --color-foreground:          var(--foreground);
+  --color-card:                var(--card);
+  --color-card-foreground:     var(--card-foreground);
+  --color-popover:             var(--popover);
+  --color-popover-foreground:  var(--popover-foreground);
+  --color-primary:             var(--primary);
+  --color-primary-foreground:  var(--primary-foreground);
+  --color-secondary:           var(--secondary);
+  --color-secondary-foreground:var(--secondary-foreground);
+  --color-muted:               var(--muted);
+  --color-muted-foreground:    var(--muted-foreground);
+  --color-accent:              var(--accent);
+  --color-accent-foreground:   var(--accent-foreground);
+  --color-destructive:         var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border:              var(--border);
+  --color-input:               var(--input);
+  --color-ring:                var(--ring);
+  --color-chart-1:             var(--chart-1);
+  --color-chart-2:             var(--chart-2);
+  --color-chart-3:             var(--chart-3);
+  --color-chart-4:             var(--chart-4);
+  --color-chart-5:             var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* raw palette as Tailwind utilities */
+  --color-ink:          var(--ink);
+  --color-ink-2:        var(--ink-2);
+  --color-ink-3:        var(--ink-3);
+  --color-ink-4:        var(--ink-4);
+  --color-paper:        var(--paper);
+  --color-paper-2:      var(--paper-2);
+  --color-paper-3:      var(--paper-3);
+  --color-cream:        var(--cream);
+  --color-ocean:        var(--ocean);
+  --color-ocean-2:      var(--ocean-2);
+  --color-navy:         var(--navy);
+  --color-teal:         var(--teal);
+  --color-forest:       var(--forest);
+  --color-indigo:       var(--indigo);
+  --color-terracotta:   var(--terracotta);
+  --color-terracotta-2: var(--terracotta-2);
+  --color-gold:         var(--gold);
+  --color-gold-2:       var(--gold-2);
+  --color-lontar-beige: var(--lontar-beige);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Batik pattern — warm ink tone */
+.batik-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2357493a' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Paper texture overlay */
+.paper-texture {
+  position: relative;
+}
+.paper-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* Decorative wave pattern — warm ink tone */
+.wave-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072H21.02c-.357-.13-.72-.264-1.088-.402l-1.768-.661C9.566 15.347 3.56 14 0 14zm100 0c-10.271 0-15.362 1.222-24.629 4.928-.955.383-1.869.74-2.75 1.072h6.359c.357-.13.72-.264 1.088-.402l1.768-.661C90.434 15.347 96.44 14 100 14zm-59.815 6c-.357-.13-.72-.264-1.088-.402l-1.768-.661C27.729 15.347 21.722 14 11.364 14 4.706 14 1.057 14.533 0 16.004V16c0-2 4.706-4 11.364-4 10.642 0 16.855 1.397 26.66 5.063l1.767.662c2.475.923 4.66 1.674 6.724 2.275h-6.33zm19.63 0h6.33c2.063-.601 4.249-1.352 6.724-2.275l1.767-.662C84.29 13.278 90.502 12 100 12v4c-6.842 0-11.386-.542-16.396-2H77.38c-2.51-.73-5.139-1.691-8.233-2.928C59.686 7.278 54.36 6 43.82 6c-10.628 0-16.856 1.397-26.66 5.063l-1.768.662C13.918 12.648 11.733 13.4 9.67 14h6.33c.357-.13.72-.264 1.088-.402l1.768-.661C28.456 9.347 34.462 8 44.82 8c10.358 0 16.363 1.347 26.66 4.937l1.767.661c.369.138.732.272 1.088.402z' fill='%2357493a' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
