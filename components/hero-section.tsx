@@ -10,6 +10,7 @@ const heroImages = [
   "/images/hero-2.webp",
   "/images/hero-3.webp",
   "/images/hero-4.webp",
+  "/images/hero-5.webp",
 ]
 
 export function HeroSection() {

@@ -16,6 +16,7 @@ const projects = [
     contributors: "50+",
     tags: ["Tradisi Lisan", "Pembelajaran", "Budaya"],
     image: "/images/bilikbecakap-proyek.webp",
+    url: "https://bilikbecakap.com",
   },
   {
     id: 2,
@@ -24,9 +25,10 @@ const projects = [
     description: "Revitalisasi Bahasa Mapur melalui Inovasi Teknologi Linguistik Berbasis Pembelajaran dan Pengarsipan Digital.",
     location: "Bangka, Bangka Belitung",
     year: "2026",
-    contributors: "-",
+    contributors: "10+",
     tags: ["Arsip Digital", "Melayu Bangka"],
-    image: "/images/bilikmapur-proyek.webp",
+    image: "/images/bilikmapur-proyek-2.webp",
+    url: "https://bilikmapur.com",
   },
 ]
 
@@ -137,11 +139,21 @@ export function ProjectsSection() {
 
                       <div className="pt-2">
                         <Button
+                          asChild={!!project.url}
                           variant="outline"
                           className="border-ocean/25 text-ocean hover:bg-ocean hover:text-paper hover:border-ocean bg-transparent group/btn rounded-sm transition-all duration-300"
                         >
-                          Jelajahi Proyek
-                          <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                          {project.url ? (
+                            <a href={project.url} target="_blank" rel="noopener noreferrer">
+                              Jelajahi Proyek
+                              <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                            </a>
+                          ) : (
+                            <>
+                              Jelajahi Proyek
+                              <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                            </>
+                          )}
                         </Button>
                       </div>
                     </div>
